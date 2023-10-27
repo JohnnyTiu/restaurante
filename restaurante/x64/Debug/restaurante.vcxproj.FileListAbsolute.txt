@@ -1,0 +1,5 @@
+C:\restaurante\restaurante\x64\Debug\restaurante.vcxproj.AssemblyReference.cache
+C:\restaurante\restaurante\x64\Debug\restaurante.principal.resources
+C:\restaurante\restaurante\x64\Debug\restaurante.vcxproj.GenerateResource.cache
+C:\restaurante\restaurante\x64\Debug\restaurante.clientes.resources
+C:\restaurante\restaurante\x64\Debug\restaurante.pedidos.resources

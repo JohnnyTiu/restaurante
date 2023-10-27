@@ -1,0 +1,6 @@
+﻿  clientes.cpp
+  pedidos.cpp
+  principal.cpp
+  Generando código...
+  clientes.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+  restaurante.vcxproj -> C:\restaurante\x64\Debug\restaurante.exe
