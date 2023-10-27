@@ -122,11 +122,19 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="clientes.cpp" />
+    <ClCompile Include="datos_cliente.cpp" />
+    <ClCompile Include="ingre_cliente.cpp" />
     <ClCompile Include="pedidos.cpp" />
     <ClCompile Include="principal.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clientes.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="datos_cliente.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ingre_cliente.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="pedidos.h">
@@ -139,6 +147,12 @@
   <ItemGroup>
     <EmbeddedResource Include="clientes.resx">
       <DependentUpon>clientes.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="datos_cliente.resx">
+      <DependentUpon>datos_cliente.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingre_cliente.resx">
+      <DependentUpon>ingre_cliente.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pedidos.resx">
       <DependentUpon>pedidos.h</DependentUpon>

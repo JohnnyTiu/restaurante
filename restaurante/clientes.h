@@ -1,4 +1,6 @@
 #pragma once
+#include "ingre_cliente.h"
+#include "datos_cliente.h"
 
 namespace restaurante {
 
@@ -35,6 +37,11 @@ namespace restaurante {
 			}
 		}
 	private: System::Windows::Forms::Button^ btn_reg;
+	private: System::Windows::Forms::Button^ btn_ingclien;
+	private: System::Windows::Forms::Button^ btn_mstrdts;
+
+
+
 	protected:
 
 	private:
@@ -52,6 +59,8 @@ namespace restaurante {
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(clientes::typeid));
 			this->btn_reg = (gcnew System::Windows::Forms::Button());
+			this->btn_ingclien = (gcnew System::Windows::Forms::Button());
+			this->btn_mstrdts = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// btn_reg
@@ -64,11 +73,33 @@ namespace restaurante {
 			this->btn_reg->UseVisualStyleBackColor = true;
 			this->btn_reg->Click += gcnew System::EventHandler(this, &clientes::btn_reg_Click);
 			// 
+			// btn_ingclien
+			// 
+			this->btn_ingclien->Location = System::Drawing::Point(48, 48);
+			this->btn_ingclien->Name = L"btn_ingclien";
+			this->btn_ingclien->Size = System::Drawing::Size(169, 31);
+			this->btn_ingclien->TabIndex = 1;
+			this->btn_ingclien->Text = L"Ingresa datos del cliente";
+			this->btn_ingclien->UseVisualStyleBackColor = true;
+			this->btn_ingclien->Click += gcnew System::EventHandler(this, &clientes::btn_ingclien_Click);
+			// 
+			// btn_mstrdts
+			// 
+			this->btn_mstrdts->Location = System::Drawing::Point(48, 109);
+			this->btn_mstrdts->Name = L"btn_mstrdts";
+			this->btn_mstrdts->Size = System::Drawing::Size(169, 23);
+			this->btn_mstrdts->TabIndex = 2;
+			this->btn_mstrdts->Text = L"Consultar Datos";
+			this->btn_mstrdts->UseVisualStyleBackColor = true;
+			this->btn_mstrdts->Click += gcnew System::EventHandler(this, &clientes::btn_mstrdts_Click);
+			// 
 			// clientes
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(282, 253);
+			this->Controls->Add(this->btn_mstrdts);
+			this->Controls->Add(this->btn_ingclien);
 			this->Controls->Add(this->btn_reg);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->MaximizeBox = false;
@@ -83,5 +114,17 @@ namespace restaurante {
 	private: System::Void btn_reg_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->Close();
 	}
-	};
+	private: System::Void btn_ingclien_Click(System::Object^ sender, System::EventArgs^ e) {
+		ingre_cliente^ frm = gcnew ingre_cliente();
+		this->Visible = false;
+		frm->ShowDialog();
+		this->Visible = true;
+	}
+	private: System::Void btn_mstrdts_Click(System::Object^ sender, System::EventArgs^ e) {
+		datos_cliente^ frm = gcnew datos_cliente();
+		this->Visible = false;
+		frm->ShowDialog();
+		this->Visible = true;
+	}
+};
 }

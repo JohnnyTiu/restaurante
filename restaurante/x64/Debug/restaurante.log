@@ -1,6 +1,24 @@
 ﻿  clientes.cpp
-  pedidos.cpp
+C:\restaurante\restaurante\datos_cliente.h(154,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\restaurante\restaurante\datos_cliente.h(163,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\restaurante\restaurante\datos_cliente.h(164,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\restaurante\restaurante\datos_cliente.h(165,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\restaurante\restaurante\datos_cliente.h(166,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\restaurante\restaurante\datos_cliente.h(156,8): warning C4101: 'cadena': variable local sin referencia
+  datos_cliente.cpp
+C:\restaurante\restaurante\datos_cliente.h(154,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\restaurante\restaurante\datos_cliente.h(163,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\restaurante\restaurante\datos_cliente.h(164,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\restaurante\restaurante\datos_cliente.h(165,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\restaurante\restaurante\datos_cliente.h(166,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\restaurante\restaurante\datos_cliente.h(156,8): warning C4101: 'cadena': variable local sin referencia
   principal.cpp
+C:\restaurante\restaurante\datos_cliente.h(154,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\restaurante\restaurante\datos_cliente.h(163,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\restaurante\restaurante\datos_cliente.h(164,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\restaurante\restaurante\datos_cliente.h(165,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\restaurante\restaurante\datos_cliente.h(166,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\restaurante\restaurante\datos_cliente.h(156,8): warning C4101: 'cadena': variable local sin referencia
   Generando código...
   clientes.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   restaurante.vcxproj -> C:\restaurante\x64\Debug\restaurante.exe
