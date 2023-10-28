@@ -39,6 +39,7 @@ namespace restaurante {
 	private: System::Windows::Forms::Button^ btn_clientes;
 	private: System::Windows::Forms::Button^ btn_pedidos;
 	private: System::Windows::Forms::Label^ lb_titu;
+	private: System::Windows::Forms::Label^ label1;
 	protected:
 
 	protected:
@@ -60,11 +61,12 @@ namespace restaurante {
 			this->btn_clientes = (gcnew System::Windows::Forms::Button());
 			this->btn_pedidos = (gcnew System::Windows::Forms::Button());
 			this->lb_titu = (gcnew System::Windows::Forms::Label());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// btn_clientes
 			// 
-			this->btn_clientes->Location = System::Drawing::Point(47, 129);
+			this->btn_clientes->Location = System::Drawing::Point(46, 129);
 			this->btn_clientes->Name = L"btn_clientes";
 			this->btn_clientes->Size = System::Drawing::Size(75, 23);
 			this->btn_clientes->TabIndex = 0;
@@ -74,9 +76,9 @@ namespace restaurante {
 			// 
 			// btn_pedidos
 			// 
-			this->btn_pedidos->Location = System::Drawing::Point(157, 129);
+			this->btn_pedidos->Location = System::Drawing::Point(165, 129);
 			this->btn_pedidos->Name = L"btn_pedidos";
-			this->btn_pedidos->Size = System::Drawing::Size(75, 23);
+			this->btn_pedidos->Size = System::Drawing::Size(75, 30);
 			this->btn_pedidos->TabIndex = 1;
 			this->btn_pedidos->Text = L"pedidos";
 			this->btn_pedidos->UseVisualStyleBackColor = true;
@@ -87,11 +89,22 @@ namespace restaurante {
 			this->lb_titu->AutoSize = true;
 			this->lb_titu->Font = (gcnew System::Drawing::Font(L"Palatino Linotype", 16.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lb_titu->Location = System::Drawing::Point(56, 24);
+			this->lb_titu->Location = System::Drawing::Point(56, 33);
 			this->lb_titu->Name = L"lb_titu";
 			this->lb_titu->Size = System::Drawing::Size(166, 37);
 			this->lb_titu->TabIndex = 2;
 			this->lb_titu->Text = L"Bienvenidos";
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Palatino Linotype", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label1->Location = System::Drawing::Point(16, 70);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(254, 33);
+			this->label1->TabIndex = 3;
+			this->label1->Text = L"Los Pollos Hermanos";
 			// 
 			// principal
 			// 
@@ -99,6 +112,7 @@ namespace restaurante {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoSize = true;
 			this->ClientSize = System::Drawing::Size(282, 253);
+			this->Controls->Add(this->label1);
 			this->Controls->Add(this->lb_titu);
 			this->Controls->Add(this->btn_pedidos);
 			this->Controls->Add(this->btn_clientes);
@@ -125,5 +139,5 @@ namespace restaurante {
 		frm->ShowDialog();
 		this->Visible = true;
 	}
-	};
+};
 }
